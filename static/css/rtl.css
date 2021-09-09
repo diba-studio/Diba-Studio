@@ -1,17 +1,3 @@
-@import url(../fonts/IRANYekan/WebFonts/css/fontiran.css);
-
-/* FONTS General CSS */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-textarea {
-  font-family: iranyekan !important;
-}
 
 h1 {
   font-weight: bold;
@@ -22,7 +8,6 @@ h1 {
 html,
 body {
   direction: rtl;
-  font-family: iranyekan !important;
   scroll-behavior: smooth;
 }
 
