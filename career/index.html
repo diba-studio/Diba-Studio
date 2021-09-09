@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assest/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assest/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body class="bg-body">
+    <div class="container">
+        <div class="container-form">
+            <div class="form"></div>
+
+            <!-- -----------------------------------------HEADER----------------------------------------- -->
+            <!-- <div class="row">
+                <div class="col-12 header">
+                    <div class="logo-container">
+                        <div class="logo-wrapper">
+                            <img src="./assest/img/logo.png" alt="" class="avatar" />
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- -----------------------------------------HEADER----------------------------------------- -->
+            <div class="row">
+                <div class="form-tab col-lg-3 col-md-12 col-sm-12">
+                    <ul class="nav flex-column">
+                        <li class="nav-item active" id="tab1">
+                            <a class="nav-link fas fa-chevron-left text-capitalize" aria-current="index" href="#">اطلاعات کلی شخص</a>
+                        </li>
+                        <li class="nav-item" id="tab2">
+                            <a class="nav-link fas fa-chevron-left text-capitalize disabled" href="#">اطلاعات تکمیلی</a>
+                        </li>
+                        <li class="nav-item" id="tab3">
+                            <a class="nav-link fas fa-chevron-left text-capitalize disabled" href="#">اطلاعات شغلی</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- -----------------------------------------FORM 1----------------------------------------- -->
+
+                <div class="form-sec1 col-lg-9 col-md-12 col-sm-12 col2-wrapper" id="form1">
+                    <h1>اطلاعات شخصی</h1>
+                    <p>لطفا تمامی بخش های زیر را با دقت پر کنید</p>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper">
+                            <input id="nameInput" type="text" class="form-control flex-grow-1" placeholder=" نام و نام خانوادگی" aria-label="Username" required />
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper">
+                            <input id="phoneInput" type="text" class="form-control" placeholder="شماره تماس" aria-label="Username" />
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper">
+                            <input id="emailInpute" type="text" class="form-control" placeholder="ایمیل" aria-label="Username" />
+                        </div>
+                    </div>
+                    <div class="input-group w-50 mb-3">
+                        <legend class="col-form-label col-sm-12 pt-0">جنسیت :</legend>
+                        <div class="col-sm-12">
+                            <div class="form-check">
+                                <input id="maleGender" class="form-check-input" type="radio" name="gender" value="male" />
+                                <label class="form-check-label" for="gender1"> مرد </label>
+                            </div>
+                            <div class="form-check">
+                                <input id="femaleGender" class="form-check-input" type="radio" name="gender" value="femail" />
+                                <label class="form-check-label" for="gender2"> زن </label>
+                            </div>
+                            <div class="form-check">
+                                <input id="otherGender" class="form-check-input" type="radio" name="gender" value="other" />
+                                <label class="form-check-label" for="gender3"> غیره </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper btn-wrapper">
+                            <button class="text-capitalize" id="button1">بخش بعد<i
+                                    class="fas fa-arrow-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- -----------------------------------------FORM2----------------------------------------- -->
+                <div class="form-sec1 col-lg-9 col-md-12 col-sm-12 col2-wrapper" id="form2" hidden>
+                    <p class="text-end">تاریخ تولد :</p>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper">
+                            <div class="input-group mb-3">
+                                <select class="form-select" id="birthDayInput">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select class="form-select" id="birthMonthInput">
+                                    <option value="0">ماه</option>
+                                    <option value="1">فروردین</option>
+                                    <option value="2">اردیبهشت</option>
+                                    <option value="3">خرداد</option>
+                                    <option value="4">تیر</option>
+                                    <option value="5">مرداد</option>
+                                    <option value="6">شهریور</option>
+                                    <option value="7">مهر</option>
+                                    <option value="8">آبان</option>
+                                    <option value="9">آذر</option>
+                                    <option value="10">دی</option>
+                                    <option value="11">بهمن</option>
+                                    <option value="12">اسفند</option>
+                                </select>
+                                <input id="birthYear" type="text" class="form-control years-input" placeholder="سال تولد" aria-label="Username" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper">
+                            <input id="address" type="text" class="form-control flex-shrink-2" placeholder="آدرس محل سکونت" aria-label="Username" />
+                        </div>
+                    </div>
+                    <div class="input-group w-55 mb-3 mt-5">
+                        <div class="form form-wrapper">
+                            <legend class="col-form-label col-sm-4 col-lg-4 pt-0">وضعیت تاهل :</legend>
+                            <div class="col-sm-8 col-lg-12">
+                                <div class="form-check">
+                                    <input id="married" class="form-check-input" type="radio" name="relationshipStatus" value="married" />
+                                    <label class="form-check-label" for="relationshipStatus"> متاهل </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="single" class="form-check-input" type="radio" name="relationshipStatus" value="single" />
+                                    <label class="form-check-label" for="relationshipStatus"> مجرد </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group w-60 mb-3">
+                        <div class="form form-wrapper">
+                            <legend class="col-form-label col-sm-2 col-lg-4 pt-0">وضعیت خدمت سربازی:</legend>
+                            <div class="col-sm-10 col-lg-8">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="educationPardon" value="option1" />
+                                    <label class="form-check-label" for="educationPardon"> معافیت تحصیلی </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="conscriptionExempt" value="option2" />
+                                    <label class="form-check-label" for="conscriptionExempt"> معاف از خدمت </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="retired" value="option2" />
+                                    <label class="form-check-label" for="retired"> دارای پایان خدمت </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="activeMilitary" value="option2" />
+                                    <label class="form-check-label" for="activeMilitary"> مشمول خدمت </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper btn-wrapper">
+                            <button class="text-capitalize" id="button2">بخش بعد<i
+                                    class="fas fa-arrow-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- -----------------------------------------FORM3----------------------------------------- -->
+                <div class="form-sec1 col-lg-9 col-md-12 col-sm-12 col2-wrapper" id="form3" hidden>
+                    <div class="input-group w-55 mb-3 mt-5">
+                        <div class="form form-wrapper">
+                            <legend class="col-form-label col-sm-2 col-lg-4 pt-0">حوزه تخصص :</legend>
+                            <div class="col-sm-10 col-lg-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="skill" id="frontend" value="front-end" />
+                                    <label class="form-check-label" for="skill1"> Frontend </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="skill" id="backend" value="back-end" />
+                                    <label class="form-check-label" for="skill2"> Backend </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="skill" id="wordpress" value="wordpress" />
+                                    <label class="form-check-label" for="skill3"> Wordpress </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group w-55 mb-3 mt-5">
+                        <div class="form form-wrapper">
+                            <legend class="col-form-label col-sm-2 col-lg-4 pt-0">سابقه کار دارید؟</legend>
+                            <div class="col-sm-10 col-lg-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="workExperiance" id="workExperiance1" value="yes" />
+                                    <label class="form-check-label" for="workExperiance1"> بله </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="workExperiance" id="workExperiance2" value="no" />
+                                    <label class="form-check-label" for="workExperiance2"> خیر </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper">
+                            <textarea type="text" class="form-control" placeholder="حوزه کاری و نام شرکت یا سازمان هایی که در آن کار کردید" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper">
+                            <input type="text" class="form-control me-2" placeholder="حقوق درخواستی" aria-label="Username" id="requestedIncome" />
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper">
+                            <textarea type="text" class="form-control" placeholder="مهارت ها و دانش های برنامه نویسی خود را بنویسید و در صورت داشتن نمونه کار لینک آنرا قرار دهید" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="form form-wrapper btn-wrapper">
+                            <button class="text-capitalize" id="button3">ارسال <i
+                                    class="fas fa-arrow-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assest/js/jquery-3.5.1.js"></script>
+<script src="./assest/js/jquery.dataTables.min.js"></script>
+<script src="./assest/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+<script src="./assest/js/formValidation.js"></script>
+<script src="./assest/js/script.js"></script>
+<script src="./assest/js/bootstrap.min.js"></script>
+
+</html>

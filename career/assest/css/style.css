@@ -1,0 +1,253 @@
+@import url(../fonts/IRANYekan/WebFonts/css/fontiran.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  font-family: iranyekan !important;
+  font-weight: 500;
+  background: no-repeat url(../img/background.jpg);
+  padding: 2rem;
+}
+
+a {
+  font-family: "iranyekan", sans-serif, "Font Awesome 5 Pro" !important;
+  font-weight: 500;
+}
+
+/* header */
+
+.container {
+  padding: 15px;
+  min-height: 100vh;
+}
+
+.container-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 20px 0 rgb(0 0 0 / 10%);
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.form {
+  display: flex;
+}
+
+.header {
+  border: 1px solid #eee;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #fff;
+}
+
+.avatar {
+  height: 3rem;
+}
+
+/* header */
+
+/* main */
+
+.form-tab {
+  background-color: #32329c;
+}
+
+.tab-number {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+}
+
+.nav {
+}
+
+.nav-link {
+  color: #d6d6d6;
+  transition: 400ms;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid #b9b9b91c;
+  display: flex;
+  box-shadow: 0px 1px 6px 0px #ffffff0d;
+  align-items: center;
+}
+
+#tab3 {
+  border-bottom: unset;
+}
+
+.fa,
+.fas {
+  font-weight: 500 !important;
+}
+
+.flex-shrink-2 {
+  flex-shrink: 2 !important;
+}
+
+.nav-item.active .fas.fa-chevron-left:before {
+  margin-left: 10px;
+  color: #fb00ff;
+  font-weight: 900;
+}
+
+.nav-item.active .nav-link:hover {
+  color: #ffffff;
+  transform: translate3d(-15px, -1px, 10px);
+}
+
+.fa-chevron-left:before {
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.col2-wrapper {
+  background-color: #f0f0f0;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media (max-width: 562px) {
+  .col2-wrapper {
+    background-color: #f0f0f0;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .input-group.w-55 .form-check {
+    width: 100% !important;
+  }
+
+  .input-group.w-55 .form-check {
+    padding-left: unset !important;
+  }
+  legend {
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .input-group.w-55 .form-check {
+    padding-left: unset !important;
+  }
+  .input-group.w-50 .form-check {
+    padding-left: unset !important;
+  }
+  .input-group.w-60 .form-check {
+    width: 100% !important;
+    padding-left: unset !important;
+  }
+  .years-input {
+    width: 100% !important;
+    margin-top: 1rem;
+  }
+  textarea.form-control {
+    min-height: calc(4.5em + (0.75rem + 2px));
+  }
+}
+
+.form-wrapper {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  flex: 1 0 0;
+}
+
+.form-control {
+  margin-left: 0.1rem;
+  font-weight: 300;
+  border: unset;
+  border-radius: 0;
+  height: 3.3rem;
+}
+
+.input-group.w-50 .form-check {
+  padding-left: 12rem;
+}
+
+.input-group.w-55 .form-check {
+  width: 50%;
+  padding-left: 10rem;
+}
+
+.input-group.w-60 .form-check {
+  width: 100%;
+  padding-left: 8rem;
+}
+
+button {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #5656da;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #363692;
+}
+
+.btn-wrapper {
+  flex-direction: row-reverse;
+}
+
+/* main */
+
+.active {
+}
+
+.fa-envelope {
+  margin-left: 5px;
+}
+
+.fa-arrow-left {
+  margin-right: 0.8rem;
+}
+
+.form-sec1 {
+  text-align: center;
+}
+
+.form-select {
+  margin-left: 0.3rem !important;
+  font-weight: 300;
+  border: unset;
+  border-radius: 0;
+  height: 3.3rem;
+}
+
+.text-end {
+  padding-right: 1rem;
+}
