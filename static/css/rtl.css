@@ -213,6 +213,8 @@ body {
 @media (max-width: 797px) {
   .details__item {
     margin-bottom: 6rem;
+    margin-left: unset;
+
   }
 }
 @media (min-width: 797px) {
