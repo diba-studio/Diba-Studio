@@ -47,11 +47,9 @@ body {
   }
 }
 
-@media screen and (min-width: 600px) {
+
   .header {
     background: #ffffff;
-    /* box-shadow: 0 0 30px #131313; */
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -425,4 +423,32 @@ body {
 }
 .btn__to__contact{
   color: #fff;
+}
+@media only screen and (max-width: 767px){
+  .work__figures {
+    right: unset;
+    left: calc(50% - 845px);
+}
+.details__title{
+  font-size: 42px;
+}
+
+  .footer {
+    position: relative;
+    padding: 56px 0 60px;
+    background: #00113B no-repeat 100% 100%/100% auto;
+}
+.footer::before{
+  top: unset;
+  width:unset;
+  height: unset;
+}
+.footer::after{
+  top: unset;
+  width:unset;
+  height: unset;
+}
+.footer__bg{
+  display:none !important;
+}
 }
