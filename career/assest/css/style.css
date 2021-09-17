@@ -250,3 +250,7 @@ button:hover {
 .text-end {
   padding-right: 1rem;
 }
+.back-btn:hover{
+  color: #ffffff;
+  transform: translate3d(-15px, -1px, 10px);
+}
