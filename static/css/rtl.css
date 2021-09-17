@@ -432,6 +432,11 @@ body {
 .details__title{
   font-size: 42px;
 }
+.details__main:not(:last-child){
+  margin-bottom: 1rem !important;
+
+
+}
 
   .footer {
     position: relative;
