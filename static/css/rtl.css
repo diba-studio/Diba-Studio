@@ -17,11 +17,18 @@ body {
 /* Header */
 
 @media only screen and (max-width: 639px) {
+  .main:before{
+    width: 100%;
+  }
   .header__wrapper {
     visibility: hidden;
   }
 }
-
+@media only screen and (max-width: 639px)
+{.main__view {
+    margin: 52px 0 0 -63px;
+}
+}
 @media only screen and (max-width: 767px) {
   .header__wrapper.visible {
     display: block;
