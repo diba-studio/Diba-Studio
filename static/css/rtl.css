@@ -27,7 +27,6 @@ body {
 @media only screen and (max-width: 639px) {
   .main__view {
     margin: 52px 0 0 -63px;
-    
   }
 }
 @media only screen and (max-width: 767px) {
@@ -445,6 +444,14 @@ body {
 .btn__to__contact {
   color: #fff;
 }
+.details__head {
+  margin: unset;
+}
+.details__info,
+.details__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 767px) {
   .work__figures {
     right: unset;
@@ -488,4 +495,7 @@ body {
     opacity: 0.85;
     transition: all 0.6s;
   }
+}
+.owl-dot:not(:first-child){
+  margin-right: 12px !important;
 }

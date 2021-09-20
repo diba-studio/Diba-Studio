@@ -1,5 +1,8 @@
 "use strict";
 
+
+
+
 // check if touch device
 function isTouchDevice() {
   var prefixes = " -webkit- -moz- -o- -ms- ".split(" ");
