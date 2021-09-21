@@ -1479,7 +1479,7 @@ html.no-scroll {
 
 body {
   min-width: 375px;
-  font-family: 'Poppins', sans-serif;
+  font-family: KalamehWeb !important;
   font-size: 18px;
   line-height: 1.77778;
   -webkit-font-smoothing: antialiased;
@@ -1496,7 +1496,7 @@ button,
 input,
 textarea,
 select {
-  font-family: 'Poppins', sans-serif; }
+  font-family: KalamehWeb !important;}
 
 .page {
   position: relative;
@@ -1518,7 +1518,7 @@ select {
   min-width: 240px;
   height: 72px;
   border-radius: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: KalamehWeb !important;
   font-size: 18px;
   font-weight: 500;
   -webkit-transition: all .25s;
@@ -1574,7 +1574,7 @@ a.btn {
 .h4,
 .h5,
 .h6 {
-  font-weight: 600; }
+  font-weight: bold; }
 
 .h1 {
   font-size: 72px;
@@ -1637,7 +1637,7 @@ a.btn {
   padding-left: 68px;
   font-size: 20px;
   line-height: 1.4;
-  font-weight: 600;
+  
   color: #4C40F7; }
   @media only screen and (max-width: 1279px) {
     .stage {
@@ -3631,7 +3631,7 @@ body:not(.touch-device) .owl-item:hover .details__preview {
   background: rgba(244, 244, 244, 0.801191);
   border-radius: 12px;
   border: 2px solid rgba(244, 244, 244, 0.801191);
-  font-family: 'Poppins', sans-serif;
+  font-family: KalamehWeb !important;
   font-size: 18px;
   color: #111029;
   -webkit-transition: all .25s;
