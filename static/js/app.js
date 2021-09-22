@@ -247,3 +247,10 @@ $(document).ready(function () {
     seacrh: false,
   });
 });
+// smooth scroll
+butter.init({
+  wrapperId: 'butter',
+  cancelOnTouch: true,
+  
+
+});

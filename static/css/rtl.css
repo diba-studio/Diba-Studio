@@ -548,28 +548,16 @@ body {
   width: 280px;
 }
 
-/* .owl-carousel .owl-item img {
-  min-height: 470px;
-  max-height: 500px;
-} */
 
 .cases__preview {
   max-height: 450px;
 }
 
-.owl-carousel .owl-item img {
-  height: 25rem;
+.cases__preview .cases__pic{
+  height: 25rem!important;
 }
+
 
 .cases__body {
   height: 15rem;
 }
-
-/* .cases__item {
-  position: relative;
-  display: flex;
-  background: #fff;
-  flex-direction: column;
-  border-radius: 24px;
-  justify-content: stretch;
-} */
