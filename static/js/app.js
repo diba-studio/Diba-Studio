@@ -251,6 +251,5 @@ $(document).ready(function () {
 butter.init({
   wrapperId: 'butter',
   cancelOnTouch: true,
-  
-
+  wrapperDamper: 0.05
 });
