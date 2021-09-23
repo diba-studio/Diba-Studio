@@ -1,8 +1,4 @@
 "use strict";
-
-
-
-
 // check if touch device
 function isTouchDevice() {
   var prefixes = " -webkit- -moz- -o- -ms- ".split(" ");
@@ -223,13 +219,15 @@ AOS.init(); // parallax effect
       });
     });
   }
-})(); // scroll to section
+})(); 
+// scroll to section
 
 (function () {
   var btn = $(".js-scroll");
   btn.click(function () {
     $("html, body").animate(
       {
+        
         scrollTop: $($(this).attr("href")).offset().top + "px",
       },
       {
@@ -246,10 +244,4 @@ $(document).ready(function () {
     placeholder: "یک گزینه انتخاب کنید",
     seacrh: false,
   });
-});
-// smooth scroll
-butter.init({
-  wrapperId: 'butter',
-  cancelOnTouch: true,
-  wrapperDamper: 0.05
 });

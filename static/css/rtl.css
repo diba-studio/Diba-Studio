@@ -12,11 +12,13 @@ h1 {
 }
 
 /* Custom Rtl CSS file */
+html {
+  scroll-behavior: smooth !important;
+}
 
 html,
 body {
   direction: rtl;
-  scroll-behavior: smooth;
 }
 
 .header__logo .header__pic {
@@ -548,15 +550,13 @@ body {
   width: 280px;
 }
 
-
 .cases__preview {
   max-height: 450px;
 }
 
-.cases__preview .cases__pic{
-  height: 25rem!important;
+.cases__preview .cases__pic {
+  height: 25rem !important;
 }
-
 
 .cases__body {
   height: 15rem;
