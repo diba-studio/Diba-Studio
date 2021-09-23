@@ -72,10 +72,10 @@ $(document).ready(function () {
     navElement: "button",
     navText: navArrows,
     dots: false,
-    loop: true,
+    loop: false,
     smartSpeed: 700,
     rtl: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     responsive: {
       320: {
