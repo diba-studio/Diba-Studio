@@ -231,7 +231,7 @@ AOS.init(); // parallax effect
         scrollTop: $($(this).attr("href")).offset().top + "px",
       },
       {
-        duration: 1000,
+        duration: 2000,
       }
     );
     return false;
