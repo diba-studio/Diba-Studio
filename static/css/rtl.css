@@ -34,6 +34,9 @@ body {
   .header__wrapper {
     visibility: hidden;
   }
+  .h1 {
+    font-size: 34px !important;
+  }
 }
 @media only screen and (max-width: 639px) {
   .main__view {
@@ -471,7 +474,7 @@ body {
 @media only screen and (max-width: 767px) {
   .work__figures {
     right: unset;
-    left: calc(50% - 845px);
+    left: calc(50% - 245px);
   }
   .details__title {
     font-size: 42px;
@@ -560,4 +563,16 @@ body {
 
 .cases__body {
   height: 15rem;
+}
+@media only screen and (max-width: 1279px) {
+  h5.details__category.h5 {
+    padding-top: 3rem;
+  }
+}
+
+.details__item:before {
+  background: unset;
+}
+.details__item {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
