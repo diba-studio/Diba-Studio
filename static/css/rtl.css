@@ -528,6 +528,13 @@ body {
   border-radius: 20%;
 }
 
+@media (max-width: 1279px) {
+  .details__preview {
+    margin-right: 44px;
+    margin-left: 33px;
+  }
+}
+
 .details__preview_cursor .details__img {
   width: 288px;
   top: unset;
@@ -576,6 +583,6 @@ body {
 .details__item {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.contacts__text.phone__text{
+.contacts__text.phone__text {
   direction: ltr;
 }
