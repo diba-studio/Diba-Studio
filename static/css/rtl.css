@@ -11,11 +11,6 @@ h1 {
   font-size: 22px !important;
 }
 
-/* Custom Rtl CSS file */
-html {
-  scroll-behavior: smooth !important;
-}
-
 html,
 body {
   direction: rtl;
