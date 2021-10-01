@@ -219,7 +219,7 @@ AOS.init(); // parallax effect
       });
     });
   }
-})(); 
+})();
 // scroll to section
 
 (function () {
@@ -227,7 +227,6 @@ AOS.init(); // parallax effect
   btn.click(function () {
     $("html, body").animate(
       {
-        
         scrollTop: $($(this).attr("href")).offset().top + "px",
       },
       {
@@ -245,3 +244,64 @@ $(document).ready(function () {
     seacrh: false,
   });
 });
+// phone validator
+var phone_input = document.getElementById("p");
+
+phone_input.addEventListener('input', () => {
+  phone_input.setCustomValidity('');
+  phone_input.checkValidity();
+});
+
+phone_input.addEventListener('invalid', () => {
+  if(phone_input.value === '') {
+    phone_input.setCustomValidity('شماره تلفن خود را وارد کنید');
+  } else {
+    phone_input.setCustomValidity('شماره تلفن خود را به صورت : 09121231212');
+  }
+});
+
+
+
+// mailer
+const formEl = document.getElementById("my_form");
+formEl.addEventListener("submit", (event) => {
+  event.preventDefault();
+  submitForm();
+  return false;
+});
+function _(id) {
+  return document.getElementById(id);
+}
+function submitForm() {
+  _("mybtn").disabled = true;
+  _("status").innerHTML = `
+    <div class="sendig__Wrapper">
+    <span class="sending">در حال ارسال</span>
+    <img class="loader" src="static/img/content/loader.gif" alt="loader">
+  </div>`;
+  var formdata = new FormData();
+  formdata.append("n", _("n").value);
+  formdata.append("p", _("p").value);
+  var ajax = new XMLHttpRequest();
+  ajax.open("POST", "./static/js/mailer.php");
+  ajax.onreadystatechange = function () {
+    if (ajax.readyState == 4 && ajax.status == 200) {
+      if (ajax.responseText == "success") {
+        _("status").innerHTML = `<h3 class="alert alert-success">
+          ممنون ${_("n").value},همکاران ما در اولین فرصت با شما تماس خواهد گرفت 
+          </h3>`;
+        _("mybtn").disabled = true;
+        // setTimeout(() => {
+        //   _("status").innerHTML = "";
+        //   _("mybtn").disabled = false;
+        // }, 5000);
+      } else {
+        _(
+          "status"
+        ).innerHTML = `<h3 class="alert alert-danger">${ajax.responseText}</h3>`;
+        _("mybtn").disabled = false;
+      }
+    }
+  };
+  ajax.send(formdata);
+}
