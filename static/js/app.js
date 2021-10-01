@@ -287,14 +287,14 @@ function submitForm() {
   ajax.onreadystatechange = function () {
     if (ajax.readyState == 4 && ajax.status == 200) {
       if (ajax.responseText == "success") {
-        _("status").innerHTML = `<h3 class="alert alert-success">
+        _("status").innerHTML = `<h5 class="alert alert-success">
           ممنون ${_("n").value},همکاران ما در اولین فرصت با شما تماس خواهد گرفت 
-          </h3>`;
+          </h5>`;
         _("mybtn").disabled = true;
-        // setTimeout(() => {
-        //   _("status").innerHTML = "";
-        //   _("mybtn").disabled = false;
-        // }, 5000);
+        setTimeout(() => {
+          _("status").innerHTML = "";
+          _("mybtn").disabled = false;
+        }, 5000);
       } else {
         _(
           "status"
