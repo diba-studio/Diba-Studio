@@ -230,12 +230,28 @@ AOS.init(); // parallax effect
         scrollTop: $($(this).attr("href")).offset().top + "px",
       },
       {
-        duration: 2000,
+        duration: 1500,
       }
     );
     return false;
   });
 })();
+// seconde scroll
+(function () {
+  var btn = $(".js-scroll-cs");
+  btn.click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top + "px",
+      },
+      {
+        duration: 700,
+      }
+    );
+    return false;
+  });
+})();
+
 
 $(document).ready(function () {
   $(".js-example-basic-single").select2({
@@ -244,6 +260,8 @@ $(document).ready(function () {
     seacrh: false,
   });
 });
+
+
 // phone validator
 var phone_input = document.getElementById("p");
 
