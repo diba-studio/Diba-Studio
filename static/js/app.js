@@ -7,10 +7,7 @@ function isTouchDevice() {
     return window.matchMedia(query).matches;
   };
 
-  if (
-    "ontouchstart" in window ||
-    (window.DocumentTouch && document instanceof DocumentTouch)
-  ) {
+  if ("ontouchstart" in window || (window.DocumentTouch && document instanceof DocumentTouch)) {
     return true;
   }
 
@@ -252,7 +249,6 @@ AOS.init(); // parallax effect
   });
 })();
 
-
 $(document).ready(function () {
   $(".js-example-basic-single").select2({
     minimumResultsForSearch: -1,
@@ -261,24 +257,21 @@ $(document).ready(function () {
   });
 });
 
-
 // phone validator
 var phone_input = document.getElementById("p");
 
-phone_input.addEventListener('input', () => {
-  phone_input.setCustomValidity('');
+phone_input.addEventListener("input", () => {
+  phone_input.setCustomValidity("");
   phone_input.checkValidity();
 });
 
-phone_input.addEventListener('invalid', () => {
-  if(phone_input.value === '') {
-    phone_input.setCustomValidity('شماره تلفن خود را وارد کنید');
+phone_input.addEventListener("invalid", () => {
+  if (phone_input.value === "") {
+    phone_input.setCustomValidity("شماره تلفن خود را وارد کنید");
   } else {
-    phone_input.setCustomValidity('شماره تلفن خود را به صورت : 09121231212');
+    phone_input.setCustomValidity("شماره تلفن خود را به صورت : 09121231212");
   }
 });
-
-
 
 // mailer
 const formEl = document.getElementById("my_form");
@@ -306,7 +299,7 @@ function submitForm() {
     if (ajax.readyState == 4 && ajax.status == 200) {
       if (ajax.responseText == "success") {
         _("status").innerHTML = `<h5 class="alert alert-success">
-          ممنون ${_("n").value},همکاران ما در اولین فرصت با شما تماس خواهد گرفت 
+          ممنون ${_("n").value},همکاران ما در اولین فرصت با شما تماس خواهند گرفت 
           </h5>`;
         _("mybtn").disabled = true;
         setTimeout(() => {
@@ -314,9 +307,7 @@ function submitForm() {
           _("mybtn").disabled = false;
         }, 5000);
       } else {
-        _(
-          "status"
-        ).innerHTML = `<h3 class="alert alert-danger">${ajax.responseText}</h3>`;
+        _("status").innerHTML = `<h3 class="alert alert-danger">${ajax.responseText}</h3>`;
         _("mybtn").disabled = false;
       }
     }
