@@ -146,7 +146,7 @@ $(document).ready(function () {
           nav: false,
           dots: true,
           loop: optionLoop,
-          smartSpeed: 600,
+          smartSpeed: 5000,
           autoHeight: optionAutoHeight,
           responsive: {
             0: {
@@ -186,7 +186,7 @@ $(document).ready(function () {
           items: itemsMobilePortrait,
           nav: false,
           dots: true,
-          smartSpeed: 600,
+          smartSpeed: 5000,
           loop: optionLoop,
           autoHeight: optionAutoHeight,
           rtl: true,
