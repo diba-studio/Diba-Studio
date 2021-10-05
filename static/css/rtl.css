@@ -675,3 +675,7 @@ img.loader {
 span.sending {
   font-weight: 600;
 }
+.review .owl-dots{
+  bottom: -38px !important;
+
+}
