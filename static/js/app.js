@@ -17,7 +17,8 @@ function isTouchDevice() {
 
 if (isTouchDevice()) {
   $("body").addClass("touch-device");
-} // header
+} 
+// header
 
 (function () {
   var header = $(".js-header"),
@@ -31,12 +32,14 @@ if (isTouchDevice()) {
     html.toggleClass("no-scroll");
     body.toggleClass("no-scroll");
   });
-})(); // carousel arrows
+})(); 
+// carousel arrows
 
 var navArrows = [
   '\n    <span>\n        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" fill="none" viewBox="0 0 8 14">\n            <path fill-rule="evenodd" d="M7.707.293a1 1 0 0 1 0 1.414L2.414 7l5.293 5.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0z" fill="#9f9fa9"/>\n        </svg>\n    </span>',
   '<span>\n        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" fill="none" viewBox="0 0 8 14">\n            <path fill-rule="evenodd" d="M.293 13.707a1 1 0 0 1 0-1.414L5.586 7 .293 1.707A1 1 0 1 1 1.707.293l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z" fill="#9f9fa9"/>\n        </svg>\n    </span>\n',
-]; // owl carousel
+]; 
+// owl carousel
 
 $(document).ready(function () {
   var slider = $(".js-slider-details");
@@ -87,7 +90,8 @@ $(document).ready(function () {
       },
     },
   });
-}); // owl carousel
+}); 
+// owl carousel
 
 (function () {
   var slider = $(".js-owl");
@@ -194,9 +198,11 @@ $(document).ready(function () {
       obj.trigger("destroy.owl.carousel");
     }
   }
-})(); // aos animation
+})(); 
+// aos animation
 
-AOS.init(); // parallax effect
+AOS.init({once: true}); 
+//parallax effect
 
 (function () {
   var parallax = $(".js-parallax");
