@@ -81,7 +81,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .header__burger {
-    /* visibility: hidden; */
+    visibility: hidden;
   }
   .header {
     position: absolute;
@@ -677,4 +677,18 @@ span.sending {
 }
 .review .owl-dots {
   bottom: -38px !important;
+}
+/* new header */
+.navbar{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #fff;
+  font-family: KalamehWeb !important;
+}
+.navbar-nav{
+  padding-right: 1.5rem;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-weight: bold;
 }
