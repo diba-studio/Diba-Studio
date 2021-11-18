@@ -692,3 +692,8 @@ span.sending {
   font-size: 1.2rem;
   font-weight: bold;
 }
+@media (max-width: 991px ){
+  .nav-link.header__link:nth-child(2){
+    display: none;
+  }
+}
