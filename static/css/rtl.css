@@ -679,21 +679,36 @@ span.sending {
   bottom: -38px !important;
 }
 /* new header */
-.navbar{
+.navbar {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: #fff;
   font-family: KalamehWeb !important;
 }
-.navbar-nav{
+.navbar-nav {
   padding-right: 3.5rem;
 }
-.nav-link{
+.nav-link {
   font-size: 1.2rem;
   font-weight: bold;
 }
-@media (max-width: 991px ){
-  .nav-link.header__link:nth-child(2){
+@media (max-width: 991px) {
+  .nav-link.header__link:nth-child(2) {
     display: none;
   }
+}
+.navbar-toggler,
+.navbar-light .navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  border: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-light .navbar-toggler-icon {
+  background: unset;
+}
+.fa-bars {
+  color: #000000;
 }
